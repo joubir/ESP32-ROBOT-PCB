@@ -297,6 +297,7 @@
 <text x="25.9" y="55.55" size="1.778" layer="26" rot="MR0">ALI JOUBIR</text>
 <text x="35.5" y="48.6" size="1.9304" layer="26" rot="MR0">ESP32 ROBOT</text>
 <text x="-13.75" y="30.5" size="2.54" layer="25" rot="R90">LINE SENSOR</text>
+<rectangle x1="9.85" y1="62.8" x2="28.7" y2="69" layer="41"/>
 </plain>
 <libraries>
 <library name="resistor" urn="urn:adsk.eagle:library:348">
