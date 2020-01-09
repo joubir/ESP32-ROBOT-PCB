@@ -24264,11 +24264,6 @@ There are for reference and you may need to adjust them for your application. Se
 <text x="10.16" y="167.64" size="2.54" layer="94">DC MOTOR</text>
 <text x="185.42" y="162.56" size="2.54" layer="94">SERVO MOTOR</text>
 <text x="7.62" y="83.82" size="2.54" layer="94">POWER</text>
-<text x="152.4" y="111.76" size="1.778" layer="94" rot="R90">mkae sure to add thsi cap to your boom</text>
-<text x="154.94" y="111.76" size="1.778" layer="94" rot="R90">mkae sure to add thsi cap to your boom</text>
-<text x="157.48" y="111.76" size="1.778" layer="94" rot="R90">mkae sure to add thsi cap to your boom</text>
-<text x="160.02" y="111.76" size="1.778" layer="94" rot="R90">mkae sure to add thsi cap to your boom</text>
-<text x="162.56" y="111.76" size="1.778" layer="94" rot="R90">mkae sure to add thsi cap to your boom</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
