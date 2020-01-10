@@ -194,7 +194,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwyNjU1MDk" projecturn="a.YnVzaW5lc3M6Z21haWwyNjU1MDkjRDIwMTkwODAyMjA2NzQ2NTU2" f3durn="urn:adsk.wipprod:dm.lineage:jkaD5kc2RRij_bivyM3_LA" pcbguid="08294e19-0bcd-49b1-9e41-09445fa606e6" lastpulledtime="" lastsyncedchangeguid="2ab164e0-65e5-e682-ef19-263422501016"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwyNjU1MDk" projecturn="a.YnVzaW5lc3M6Z21haWwyNjU1MDkjRDIwMTkwODAyMjA2NzQ2NTU2" f3durn="urn:adsk.wipprod:dm.lineage:jkaD5kc2RRij_bivyM3_LA" pcbguid="08294e19-0bcd-49b1-9e41-09445fa606e6" lastpulledtime="" lastsyncedchangeguid="56a1cb03-f006-d79b-819c-bae5fc0f31e5"/>
 <plain>
 <circle x="-4" y="23" radius="1.5" width="0.3" layer="20"/>
 <circle x="-18" y="23" radius="1.5" width="0.3" layer="20"/>
@@ -292,7 +292,7 @@
 <text x="4.3" y="43.35" size="1.6764" layer="25">+3V3</text>
 <text x="4.35" y="40.85" size="1.6764" layer="25">GND</text>
 <text x="-10.85" y="42.85" size="1.6764" layer="25">+3V3</text>
-<text x="-10.8" y="40.35" size="1.6764" layer="25">GND</text>
+<text x="-10.5" y="40.3" size="1.6764" layer="25">GND</text>
 <text x="26.05" y="58.75" size="1.778" layer="26" rot="MR0">MADE BY</text>
 <text x="25.9" y="55.55" size="1.778" layer="26" rot="MR0">ALI JOUBIR</text>
 <text x="35.5" y="48.6" size="1.9304" layer="26" rot="MR0">ESP32 ROBOT</text>
@@ -1908,6 +1908,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOD-323" urn="urn:adsk.eagle:footprint:38400/1" library_version="1">
+<description>SOD-323 (Small Outline Diode)</description>
+<wire x1="-1.77" y1="0.625" x2="-1.77" y2="-0.625" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="-0.625" x2="0.9" y2="-0.625" width="0.2032" layer="21"/>
+<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SC70-6" urn="urn:adsk.eagle:package:38463/1" type="box" library_version="1">
@@ -1915,6 +1925,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Example Datasheet</description>
 <packageinstances>
 <packageinstance name="SC70-6"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD-323" urn="urn:adsk.eagle:package:38441/1" type="box" library_version="1">
+<description>SOD-323 (Small Outline Diode)</description>
+<packageinstances>
+<packageinstance name="SOD-323"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2790,7 +2806,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="37.465" y="43.434" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="36.83" y="61.468" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.185" y="63.323" size="0.6096" layer="25" rot="R180"/>
+<attribute name="NAME" x="38.035" y="62.773" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="37.465" y="63.373" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="RESET" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" package="TACTILE-SWITCH-1101NE" package3d_urn="urn:adsk.eagle:package:5829833/3" value="RST" x="37.465" y="46.863" smashed="yes" rot="R90">
@@ -2957,12 +2973,12 @@ design rules under a new name.</description>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/on-semiconductor/QRE1113GR/QRE1113GRCT-ND/965713?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-11" y="25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="-11" y="25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MP" value="QRE1113GR" x="-11" y="25" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-9.2" y="28.14" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-9.75" y="28.59" size="1.27" layer="26" rot="MR0"/>
 <attribute name="PACKAGE" value="SMD-4 ON Semiconductor" x="-11" y="25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="-8.3" y="21.7" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="-13.9" y="25.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-14.535" y="26.135" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="-14.735" y="26.135" size="0.6096" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="-11.995" y="26.135" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="LINE_SENSOR1" library="Headers" library_urn="urn:adsk.eagle:library:11687645" package="61300611121" package3d_urn="urn:adsk.eagle:package:11390686/2" value="61300611121" x="-3.55" y="47.7" smashed="yes" rot="R90">
@@ -2973,7 +2989,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="0.212" y="43.18" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="100" x="-8" y="26.3" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-7.365" y="25.665" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="-7.065" y="25.665" size="0.6096" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="-9.905" y="25.665" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="U5" library="QRE1113GR" package="SOIC180P460X187-4N" value="QRE1113GR" x="-11" y="37" smashed="yes" rot="MR0">
@@ -2982,16 +2998,16 @@ design rules under a new name.</description>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/on-semiconductor/QRE1113GR/QRE1113GRCT-ND/965713?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-3.1" y="46.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="-3.1" y="46.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MP" value="QRE1113GR" x="-3.1" y="46.9" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-9.2" y="40.14" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-9.9" y="40.79" size="1.27" layer="26" rot="MR0"/>
 <attribute name="PACKAGE" value="SMD-4 ON Semiconductor" x="-3.1" y="46.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="-9.25" y="32.6" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="-13.8" y="37.05" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-14.535" y="38.685" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="-14.635" y="38.035" size="0.6096" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="-11.895" y="37.685" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="100" x="-8" y="36.9" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-6.085" y="38.335" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="-6.635" y="37.535" size="0.6096" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="-9.905" y="36.265" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="U6" library="QRE1113GR" package="SOIC180P460X187-4N" value="QRE1113GR" x="-11" y="53" smashed="yes" rot="MR0">
@@ -3000,16 +3016,16 @@ design rules under a new name.</description>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/on-semiconductor/QRE1113GR/QRE1113GRCT-ND/965713?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-3.1" y="62.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="-3.1" y="62.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MP" value="QRE1113GR" x="-3.1" y="62.9" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-9.2" y="56.14" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-9.95" y="47.94" size="1.27" layer="26" rot="MR0"/>
 <attribute name="PACKAGE" value="SMD-4 ON Semiconductor" x="-3.1" y="62.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="-9.25" y="48.6" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="-13.95" y="53.1" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-14.635" y="54.685" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="-14.635" y="54.185" size="0.6096" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="-12.045" y="53.735" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="100" x="-8.1" y="54.35" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-7.465" y="52.665" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="-7.265" y="53.465" size="0.6096" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="-10.005" y="53.715" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="U7" library="QRE1113GR" package="SOIC180P460X187-4N" value="QRE1113GR" x="-11" y="65" smashed="yes" rot="MR0">
@@ -3018,21 +3034,34 @@ design rules under a new name.</description>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/on-semiconductor/QRE1113GR/QRE1113GRCT-ND/965713?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-3.1" y="74.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="-3.1" y="74.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MP" value="QRE1113GR" x="-3.1" y="74.9" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-9.2" y="68.14" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-9.8" y="60.09" size="1.27" layer="26" rot="MR0"/>
 <attribute name="PACKAGE" value="SMD-4 ON Semiconductor" x="-3.1" y="74.9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="-9.25" y="60.6" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="-13.9" y="65" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-14.585" y="66.485" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="-14.735" y="65.735" size="0.6096" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="-11.995" y="65.635" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="100" x="-8.2" y="66.35" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-7.565" y="65.715" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="-8.615" y="63.015" size="0.6096" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="-10.105" y="65.715" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="U$2" library="mouse-bites" package="MOUSE-BITES-5" value="MOUSE-BITES-5" x="-0.5" y="26.35" smashed="yes" rot="R90"/>
 <element name="U$3" library="mouse-bites" package="MOUSE-BITES-5" value="MOUSE-BITES-5" x="-0.5" y="55.8" smashed="yes" rot="R90"/>
 <element name="LOGO1" library="Particle-Devices" library_urn="urn:adsk.eagle:library:5952892" package="OSHW-LOGO-S" package3d_urn="urn:adsk.eagle:package:5952927/1" value="OSHW-LOGOS" x="12.35" y="52.8" smashed="yes" rot="MR0"/>
+<element name="D1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOD-323" package3d_urn="urn:adsk.eagle:package:38441/1" value="7.5V" x="34.85" y="16" smashed="yes">
+<attribute name="NAME" x="34.85" y="16.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-08199" x="34.85" y="16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="34.85" y="15.238" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="31" y="58.25" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.285" y="57.665" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="31.635" y="60.155" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="31.1" y="59.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.285" y="60.815" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="31.735" y="61.505" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="VBUS">
@@ -3111,6 +3140,7 @@ design rules under a new name.</description>
 <contactref element="U7" pad="4"/>
 <contactref element="U7" pad="2"/>
 <contactref element="LINE_SENSOR1" pad="1"/>
+<contactref element="D1" pad="A"/>
 <wire x1="-3.55" y1="41.35" x2="2.667" y2="41.402" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR_VP">
@@ -3344,6 +3374,13 @@ design rules under a new name.</description>
 <wire x1="-16.25" y1="40.15" x2="-16.25" y2="52.5" width="0.3048" layer="16"/>
 <wire x1="-16.25" y1="52.5" x2="-14.95" y2="53.8" width="0.3048" layer="16"/>
 <wire x1="-14.95" y1="53.8" x2="-14" y2="53.8" width="0.3048" layer="16"/>
+<contactref element="R16" pad="1"/>
+<contactref element="R17" pad="1"/>
+<wire x1="31.65" y1="58.25" x2="31.65" y2="59.5" width="0.3048" layer="1"/>
+<wire x1="31.65" y1="59.5" x2="31.75" y2="59.6" width="0.3048" layer="1"/>
+<wire x1="31.75" y1="59.6" x2="31.75" y2="60.2" width="0.3048" layer="1"/>
+<wire x1="33" y1="61.45" x2="34.6" y2="61.45" width="0.3048" layer="1"/>
+<wire x1="31.75" y1="60.2" x2="33" y2="61.45" width="0.3048" layer="1"/>
 <wire x1="2.667" y1="43.942" x2="-3.55" y2="43.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V3">
@@ -3607,6 +3644,12 @@ design rules under a new name.</description>
 <wire x1="13.3872" y1="38.736675" x2="13.3872" y2="38.063325" width="0.3048" layer="1"/>
 <wire x1="13.3872" y1="38.063325" x2="13.4" y2="38.050525" width="0.3048" layer="1"/>
 <wire x1="13.4" y1="38.050525" x2="13.4" y2="29.2" width="0.3048" layer="1"/>
+<contactref element="R16" pad="2"/>
+<wire x1="27.804" y1="55.425" x2="28.825" y2="55.425" width="0.3048" layer="1"/>
+<wire x1="29.7" y1="58.25" x2="30.35" y2="58.25" width="0.3048" layer="1"/>
+<wire x1="28.825" y1="55.425" x2="29.4" y2="56" width="0.3048" layer="1"/>
+<wire x1="29.4" y1="56" x2="29.4" y2="57.95" width="0.3048" layer="1"/>
+<wire x1="29.4" y1="57.95" x2="29.7" y2="58.25" width="0.3048" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="I2C" pad="4"/>
@@ -3623,6 +3666,11 @@ design rules under a new name.</description>
 <wire x1="12.8" y1="33.35" x2="10.65" y2="31.2" width="0.3048" layer="1"/>
 <wire x1="10.65" y1="31.2" x2="10.65" y2="29.101" width="0.3048" layer="1"/>
 <wire x1="10.668" y1="29.083" x2="10.65" y2="29.101" width="0.3048" layer="1"/>
+<contactref element="R17" pad="2"/>
+<wire x1="27.804" y1="59.235" x2="28.885" y2="59.235" width="0.3048" layer="1"/>
+<wire x1="28.885" y1="59.235" x2="29.35" y2="59.7" width="0.3048" layer="1"/>
+<wire x1="29.35" y1="59.7" x2="30.35" y2="59.7" width="0.3048" layer="1"/>
+<wire x1="30.35" y1="59.7" x2="30.45" y2="59.6" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="ON" pad="A"/>
@@ -3737,6 +3785,10 @@ design rules under a new name.</description>
 <wire x1="32.345" y1="13.155" x2="34.25" y2="11.25" width="1.016" layer="1"/>
 <wire x1="34.25" y1="11.25" x2="37.412" y2="11.25" width="1.016" layer="1"/>
 <wire x1="37.412" y1="11.25" x2="37.465" y2="11.303" width="1.016" layer="1"/>
+<contactref element="D1" pad="C"/>
+<wire x1="32.345" y1="14.128" x2="32.345" y2="15.545" width="1.016" layer="1"/>
+<wire x1="32.8" y1="16" x2="33.7" y2="16" width="1.016" layer="1"/>
+<wire x1="32.345" y1="15.545" x2="32.8" y2="16" width="1.016" layer="1"/>
 </signal>
 <signal name="SERVO2">
 <contactref element="SERVO2" pad="1"/>
