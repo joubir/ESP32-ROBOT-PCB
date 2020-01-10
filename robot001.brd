@@ -2901,9 +2901,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="35.418" y="10.483" size="1.016" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="39.497" y="10.033" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="100" x="31.215" y="30.21" smashed="yes" rot="R180">
-<attribute name="NAME" x="32.231" y="29.575" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="31.85" y="32.115" size="1.27" layer="27" rot="R180"/>
+<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="100" x="30.715" y="30.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.731" y="29.725" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="31.35" y="32.265" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="2.2uf" x="23.622" y="32.766" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.216" y="32.454" size="0.6096" layer="25"/>
@@ -3062,6 +3062,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="31.285" y="60.815" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="31.735" y="61.505" size="1.27" layer="27" rot="R180"/>
 </element>
+<element name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="31.8" y="26.55" smashed="yes">
+<attribute name="NAME" x="31.165" y="25.285" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="31.165" y="24.645" size="1.27" layer="27"/>
+</element>
+<element name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k" x="30.8" y="27.9" smashed="yes">
+<attribute name="NAME" x="30.265" y="28.535" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="30.165" y="25.995" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="VBUS">
@@ -3141,6 +3149,8 @@ design rules under a new name.</description>
 <contactref element="U7" pad="2"/>
 <contactref element="LINE_SENSOR1" pad="1"/>
 <contactref element="D1" pad="A"/>
+<contactref element="R18" pad="1"/>
+<contactref element="R19" pad="1"/>
 <wire x1="-3.55" y1="41.35" x2="2.667" y2="41.402" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR_VP">
@@ -3291,7 +3301,8 @@ design rules under a new name.</description>
 <wire x1="3.81" y1="43.942" x2="5.207" y2="42.545" width="1.27" layer="16"/>
 <wire x1="5.207" y1="29.464" x2="5.588" y2="29.083" width="1.27" layer="16"/>
 <wire x1="5.207" y1="42.545" x2="5.207" y2="29.464" width="1.27" layer="16"/>
-<wire x1="30.565" y1="30.21" x2="29.4525" y2="29.0975" width="0.3048" layer="1"/>
+<wire x1="30.065" y1="30.36" x2="29.4525" y2="29.7475" width="0.3048" layer="1"/>
+<wire x1="29.4525" y1="29.7475" x2="29.4525" y2="29.0975" width="0.3048" layer="1"/>
 <wire x1="29.4525" y1="29.0975" x2="25.642" y2="25.287" width="0.3048" layer="1"/>
 <wire x1="25.642" y1="25.287" x2="25.642" y2="20.983" width="0.3048" layer="1"/>
 <polygon width="0.1016" layer="1" thermals="no">
@@ -3407,9 +3418,9 @@ design rules under a new name.</description>
 <signal name="NSLEEP">
 <contactref element="U3" pad="1"/>
 <contactref element="R7" pad="1"/>
-<wire x1="31.865" y1="30.21" x2="32.46" y2="30.21" width="0.3048" layer="1"/>
+<wire x1="31.365" y1="30.36" x2="32.61" y2="30.36" width="0.3048" layer="1"/>
 <wire x1="33.0454" y1="30.7954" x2="33.0454" y2="31.761" width="0.3048" layer="1"/>
-<wire x1="32.46" y1="30.21" x2="33.0454" y2="30.7954" width="0.3048" layer="1"/>
+<wire x1="32.61" y1="30.36" x2="33.0454" y2="30.7954" width="0.3048" layer="1"/>
 </signal>
 <signal name="AOUT1">
 <contactref element="U3" pad="2"/>
@@ -3905,6 +3916,34 @@ design rules under a new name.</description>
 <wire x1="-11.1" y1="58.1" x2="-12.1" y2="59.1" width="0.3048" layer="16"/>
 <wire x1="-12.1" y1="62.825" x2="-11.9" y2="63.025" width="0.3048" layer="16"/>
 <wire x1="-12.1" y1="59.1" x2="-12.1" y2="62.825" width="0.3048" layer="16"/>
+</signal>
+<signal name="N$9">
+<contactref element="U3" pad="3"/>
+<contactref element="R18" pad="2"/>
+<wire x1="32.45" y1="26.55" x2="32.45" y2="26.65393125" width="0.254" layer="1"/>
+<wire x1="32.45" y1="26.55" x2="33.25" y2="27.35" width="0.254" layer="1"/>
+<wire x1="33.25" y1="27.35" x2="34.05" y2="27.35" width="0.254" layer="1"/>
+<via x="34.05" y="27.35" extent="1-16" drill="0.35"/>
+<wire x1="34.05" y1="27.35" x2="34.05" y2="31.45" width="0.254" layer="16"/>
+<wire x1="34.05" y1="31.45" x2="33" y2="32.5" width="0.254" layer="16"/>
+<wire x1="32.95" y1="32.5" x2="33" y2="32.5" width="0.254" layer="16"/>
+<wire x1="33" y1="32.5" x2="32.5" y2="32" width="0.254" layer="16"/>
+<wire x1="32.5" y1="32" x2="31.55" y2="32" width="0.254" layer="16"/>
+<via x="31.55" y="32" extent="1-16" drill="0.35"/>
+<wire x1="31.55" y1="32" x2="31.55" y2="32.45" width="0.254" layer="1"/>
+<wire x1="32.161" y1="33.061" x2="33.0454" y2="33.061" width="0.254" layer="1"/>
+<wire x1="31.55" y1="32.45" x2="32.161" y2="33.061" width="0.254" layer="1"/>
+</signal>
+<signal name="N$10">
+<contactref element="U3" pad="6"/>
+<contactref element="R19" pad="2"/>
+<wire x1="31.45" y1="27.9" x2="31.45" y2="28.7" width="0.254" layer="1"/>
+<wire x1="31.45" y1="28.7" x2="30.7356" y2="29.4144" width="0.254" layer="1"/>
+<wire x1="31.5" y1="33" x2="31.5" y2="34.7" width="0.254" layer="1"/>
+<wire x1="31.5" y1="34.7" x2="31.811" y2="35.011" width="0.254" layer="1"/>
+<wire x1="31.811" y1="35.011" x2="33.0454" y2="35.011" width="0.254" layer="1"/>
+<wire x1="30.7356" y1="29.4144" x2="30.7356" y2="32.2356" width="0.254" layer="1"/>
+<wire x1="30.7356" y1="32.2356" x2="31.5" y2="33" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

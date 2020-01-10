@@ -23802,6 +23802,9 @@ There are for reference and you may need to adjust them for your application. Se
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k"/>
 <part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k"/>
 <part name="+3V21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k"/>
+<part name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10k"/>
+<part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24604,6 +24607,17 @@ There are for reference and you may need to adjust them for your application. Se
 <instance part="GND28" gate="1" x="22.86" y="7.62" smashed="yes">
 <attribute name="VALUE" x="20.32" y="5.08" size="1.778" layer="96"/>
 </instance>
+<instance part="R18" gate="G$1" x="35.56" y="142.24" smashed="yes">
+<attribute name="NAME" x="31.75" y="143.7386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="31.75" y="138.938" size="1.778" layer="96"/>
+</instance>
+<instance part="R19" gate="G$1" x="35.56" y="134.62" smashed="yes">
+<attribute name="NAME" x="31.75" y="136.1186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="31.75" y="131.318" size="1.778" layer="96"/>
+</instance>
+<instance part="GND29" gate="1" x="20.32" y="157.48" smashed="yes" rot="R180">
+<attribute name="VALUE" x="22.86" y="160.02" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24780,6 +24794,16 @@ There are for reference and you may need to adjust them for your application. Se
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="17.78" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="30.48" y1="142.24" x2="20.32" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="142.24" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="134.62" x2="20.32" y2="142.24" width="0.1524" layer="91"/>
+<junction x="20.32" y="142.24"/>
 </segment>
 </net>
 <net name="VINT" class="0">
@@ -25006,6 +25030,20 @@ There are for reference and you may need to adjust them for your application. Se
 <pinref part="LINE" gate="G$1" pin="6"/>
 <wire x1="238.76" y1="53.34" x2="228.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="228.6" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="AISEN"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="142.24" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="BISEN"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
